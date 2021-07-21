@@ -42,6 +42,7 @@ AF.request("https://api.github.com/users/\(name)/repos").responseJSON { (respons
                 exit(0)
             }
             
+            print("репозитории \(name):")
             for i in 0..<repos.count {
                 print(repos[i].name)
             }
